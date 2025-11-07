@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "621fe1f527d68ebb24438395"
+  },
+  "professionalName": "Nephi Asha",
+  "nameLink": {
+    "firstName": "Nephi",
+    "url": "https://www.linkedin.com/in/nephi-asha-3a5695175/"
+  },
+  "base64Image": "https://media.licdn.com/dms/image/v2/D4D03AQGf67OMD3HkrQ/profile-displayphoto-scale_200_200/B4DZf40f_PGkAc-/0/1752226204565?e=1764201600&v=beta&t=BriyVoBxa6aYU9mHtMD7yu0mQdhW-pe747mLT6eTOT0",
+  "firstName": "Nephi",
+  "primaryDescription": " is a Student at BYU-Idaho",
+  "workDescription1": "He is a full-stack web developer",
+  "workDescription2": "He also grades lots of programming and web development assignments.",
+  "linkTitleText": "Check out his work below",
+  "linkedInLink": {
+    "link": "https://www.linkedin.com/in/nephi-asha-3a5695175/",
+    "text": "LinkedIn"
+  },
+  "githubLink": {
+    "link": "https://github.com/nephi-asha",
+    "text": "GitHub"
+  },
+  "contactText": "Feel free to contact him at nasha@byupathway.edu if you'd like for him to work for you!"
+}]
