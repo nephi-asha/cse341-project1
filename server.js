@@ -15,6 +15,10 @@ app
   })
   .use('/users', professionalRoutes);
 
+app.get('/', (req, res) => {
+  res.send('To access professional data, please navigate to /users endpoint.');
+});
+
 mongodb.initDb((err, mongodb) => {
   if (err) {
     console.log(err);
