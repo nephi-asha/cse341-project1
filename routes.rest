@@ -1,0 +1,74 @@
+// LOCALHOST
+### Get all user
+GET http://localhost:8080/user
+
+
+### Get user by id
+GET http://localhost:8080/user/6918bf6a154e374a24c299f8
+
+
+### Create user
+POST http://localhost:8080/user HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Kelvin",
+    "lastName":"Ajibola",
+    "email":"kelv.ajibola@yahoo.com",
+    "favoriteColor":"Brown",
+    "birthday":"23/10/2004"
+}
+
+
+### PUT user
+PUT http://localhost:8080/user/6918bf6a154e374a24c299f8 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Kelvin",
+  "lastName": "Ajibola",
+  "email": "kel@gmail.com",
+  "favoriteColor": "Gray",
+  "birthday": "23/10/2025"
+}
+
+### DELETE user
+DELETE http://localhost:8080/user/6918bf6a154e374a24c299f8 HTTP/1.1
+
+// PRODUCTION Deploy
+### Get all user
+GET https://cse341-instructor.herokuapp.com/user
+
+
+### Get user by id
+GET https://cse341-instructor.herokuapp.com/user/622023f642f9ab4cd6e060b3
+
+
+### Create user
+POST https://cse341-instructor.herokuapp.com/user HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ashley",
+    "lastName":"Weaver",
+    "email":"aWeaver@test.com",
+    "favoriteColor":"Brown",
+    "birthday":"06/19/2000"
+}
+
+
+### PUT user
+PUT https://cse341-instructor.herokuapp.com/user/6220bcb39cd507e920c75a0b HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sarah",
+    "lastName":"Birch",
+    "email":"sarahB@gmail.com",
+    "favoriteColor":"Yellow",
+    "birthday":"06/12/20"
+}
+
+
+### DELETE user
+DELETE https://cse341-instructor.herokuapp.com/user/6220e34083149913680f9a64 HTTP/1.1
