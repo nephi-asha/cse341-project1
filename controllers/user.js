@@ -6,7 +6,7 @@ const getAll = async (req, res) => {
   const result = await mongodb
     .getDb()
     .db('project1')
-    .collection('user')
+    .collection('contact')
     .find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -20,7 +20,7 @@ const getSingle = async (req, res) => {
   const result = await mongodb
     .getDb()
     .db('project1')
-    .collection('user')
+    .collection('contact')
     .find({ _id: contactId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -40,7 +40,7 @@ const createContact = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db('project1')
-    .collection('user')
+    .collection('contact')
     .insertOne(user);
   if (response.acknowledged) {
     res.status(201).json(response);
@@ -62,7 +62,7 @@ const updateContact = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db('project1')
-    .collection('user')
+    .collection('contact')
     .updateOne({ _id: userId}, {$set: user });
     // .updateOne({ _id: userId }, { $set: req.body });
   console.log(response);
@@ -79,7 +79,7 @@ const deleteContact = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db('project1')
-    .collection('user')
+    .collection('contact')
     .deleteOne({ _id: contactId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
