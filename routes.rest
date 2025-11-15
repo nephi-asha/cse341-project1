@@ -41,7 +41,7 @@ GET https://cse341-project1-p8ez.onrender.com/user
 
 
 ### Get user by id
-GET https://cse341-project1-p8ez.onrender.com/user/6918c85354188ff139d39ed4
+GET https://cse341-project1-p8ez.onrender.com/user/6918cc3454188ff139d39ed7
 
 
 ### Create user
