@@ -24,7 +24,7 @@
     },
     "/user/": {
       "get": {
-        "description": "",
+        "description": "Gets all users",
         "produces": [
           "application/json"
         ],
@@ -35,7 +35,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Creates new user",
         "parameters": [
           {
             "name": "body",
@@ -74,7 +74,7 @@
     },
     "/user/{id}": {
       "get": {
-        "description": "",
+        "description": "Gets a single user by id",
         "produces": [
           "application/json"
         ],
@@ -93,7 +93,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Updates a single user",
         "parameters": [
           {
             "name": "id",
@@ -136,7 +136,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Deletes a single user by Id",
         "parameters": [
           {
             "name": "id",

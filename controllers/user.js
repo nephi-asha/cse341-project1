@@ -2,6 +2,7 @@ const mongodb = require('../db/connect');
 const { ObjectId } = require('mongodb');
 
 const getAll = async (req, res) => {
+  // #swagger.description = 'Gets all users'
   const result = await mongodb
     .getDb()
     .db('project1')
@@ -14,6 +15,7 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
+  // #swagger.description = 'Gets a single user by id'
   const contactId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
@@ -27,6 +29,7 @@ const getSingle = async (req, res) => {
 };
 
 const createContact = async (req, res) => {
+  // #swagger.description = 'Creates new user'
   const user = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -47,6 +50,7 @@ const createContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
+  // #swagger.description = 'Updates a single user'
   const userId = new ObjectId(req.params.id);
   const user = {
     firstName: req.body.firstName,
@@ -70,6 +74,7 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
+  // #swagger.description = 'Deletes a single user by Id'
   const contactId = new ObjectId(req.params.id);
   const response = await mongodb
     .getDb()
